@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:tools = "http://schemas.android.com/tools"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent"
+	tools:context = ".ActivityScrollView"
+	>
+	<TableLayout
+		android:layout_height = "wrap_content"
+		android:layout_width = "wrap_content"
+		android:stretchColumns = "0"
+		>
+		<TableRow>
+			<View
+				android:layout_height = "100dp"
+				android:background = "#000000"
+				/>
+			<TextView
+				android:text = "@string/_000000"
+				android:paddingLeft = "4dp"
+				android:paddingRight = "4dp"
+				android:layout_gravity = "center_vertical"
+				/>
+		</TableRow>
+		<TableRow>
+			<View
+				android:layout_height = "100dp"
+				android:background = "#FF0000"
+				/>
+			<TextView
+				android:text = "@string/ff0000"
+				android:paddingLeft = "4dp"
+				android:paddingRight = "4dp"
+				android:layout_gravity = "center_vertical"
+				/>
+		</TableRow>
+		<TableRow>
+			<View
+				android:layout_height = "100dp"
+				android:background = "#00FF00"
+				/>
+			<TextView
+				android:text = "@string/_00ff00"
+				android:paddingLeft = "4dp"
+				android:paddingRight = "4dp"
+				android:layout_gravity = "center_vertical"
+				/>
+		</TableRow>
+		<TableRow>
+			<View
+				android:layout_height = "100dp"
+				android:background = "#FFFF00"
+				/>
+			<TextView
+				android:text = "@string/ffff00"
+				android:paddingLeft = "4dp"
+				android:paddingRight = "4dp"
+				android:layout_gravity = "center_vertical"
+				/>
+		</TableRow>
+		<TableRow>
+			<View
+				android:layout_height = "100dp"
+				android:background = "#0000FF"
+				/>
+			<TextView
+				android:text = "@string/_0000ff"
+				android:paddingLeft = "4dp"
+				android:paddingRight = "4dp"
+				android:layout_gravity = "center_vertical"
+				/>
+		</TableRow>
+		<TableRow>
+			<View
+				android:layout_height = "100dp"
+				android:background = "#FF00FF"
+				/>
+			<TextView
+				android:text = "@string/ff00ff"
+				android:paddingLeft = "4dp"
+				android:paddingRight = "4dp"
+				android:layout_gravity = "center_vertical"
+				/>
+		</TableRow>
+		<TableRow>
+			<View
+				android:layout_height = "100dp"
+				android:background = "#00FFFF"
+				/>
+			<TextView
+				android:text = "@string/_00ffff"
+				android:paddingLeft = "4dp"
+				android:paddingRight = "4dp"
+				android:layout_gravity = "center_vertical"
+				/>
+		</TableRow>
+		<TableRow>
+			<View
+				android:layout_height = "100dp"
+				android:background = "#FFFFFF"
+				/>
+			<TextView
+				android:text = "@string/ffffff"
+				android:paddingLeft = "4dp"
+				android:paddingRight = "4dp"
+				android:layout_gravity = "center_vertical"
+				/>
+		</TableRow>
+	</TableLayout>
+</ScrollView>

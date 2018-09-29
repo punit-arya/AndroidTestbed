@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:tools = "http://schemas.android.com/tools"
+	android:layout_height = "match_parent"
+	android:layout_width = "match_parent"
+	>
+	<LinearLayout
+		android:background = "@color/background"
+		android:layout_height = "wrap_content"
+		android:layout_width = "match_parent"
+		android:orientation = "vertical"
+		tools:context = ".ActivityMain"
+		>
+		<TextView
+			android:layout_gravity = "center_horizontal"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:text = "@string/mainTitle"
+			android:textSize = "@dimen/title"
+			/>
+		<TextView
+			android:layout_gravity = "center_horizontal"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:text = "@string/linearLayout"
+			android:textSize = "@dimen/subheading"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/buttonLinearLayout"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapLinearLayout"
+			android:text = "@string/goToActivityLinearLayout"
+			android:textColor = "@color/colorAccent"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/buttonRelativeLayout"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapRelativeLayout"
+			android:text = "@string/goToActivityRelativeLayout"
+			android:textColor = "@color/colorAccent"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/buttonTableLayout"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapTableLayout"
+			android:text = "@string/goToActivityTableLayout"
+			android:textColor = "@color/colorAccent"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityRadioGroup"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapRadioGroup"
+			android:text = "@string/goToActivityRadioGroup"
+			android:textColor = "@color/colorAccent"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityScrollView"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapScrollView"
+			android:text = "@string/goToActivityScrollView"
+			android:textColor = "@color/colorAccent"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityListView"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapListView"
+			android:text = "@string/goToActivityListView"
+			android:textColor = "@color/colorAccent"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityListViewMultipleChoice"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapListViewMultipleChoice"
+			android:text = "@string/goToActivityListViewMultipleChoice"
+			android:textColor = "@color/colorAccent"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivitySpinner"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapSpinner"
+			android:text = "@string/goToActivitySpinner"
+			android:textColor = "@color/colorAccent"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityGridView"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapGridView"
+			android:text = "@string/goToActivityGridView"
+			android:textColor = "@color/colorAccent"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityAutoCompleteTextView"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapAutoCompleteTextView"
+			android:text = "@string/goToActivityAutoCompleteTextView"
+			android:textColor = "@color/colorAccent"
+			/>
+	</LinearLayout>
+</ScrollView>

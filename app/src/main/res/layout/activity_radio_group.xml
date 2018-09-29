@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:tools = "http://schemas.android.com/tools"
+	android:layout_height = "match_parent"
+	android:layout_width = "match_parent"
+	tools:context = ".ActivityRadioGroup"
+	>
+	<TextView
+		android:layout_height = "wrap_content"
+		android:layout_width = "wrap_content"
+		android:text = "@string/activity4Title"
+		android:textSize = "@dimen/title"
+		/>
+	<TextView
+		android:layout_height = "wrap_content"
+		android:layout_width = "wrap_content"
+		android:text = "@string/radioGroup"
+		android:textSize = "@dimen/subheading"
+		/>
+	<RadioButton
+		android:id = "@+id/radio1"
+		android:layout_height = "wrap_content"
+		android:layout_width = "wrap_content"
+		android:text = "@string/radio1"
+		/>
+	<RadioButton
+		android:id = "@+id/radio2"
+		android:layout_height = "wrap_content"
+		android:layout_width = "wrap_content"
+		android:text = "@string/radio2"
+		/>
+	<RadioButton
+		android:id = "@+id/radio3"
+		android:layout_height = "wrap_content"
+		android:layout_width = "wrap_content"
+		android:text = "@string/radio3"
+		/>
+</RadioGroup>

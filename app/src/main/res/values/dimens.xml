@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name = "subheading">20sp</dimen>
+	<dimen name = "title">30sp</dimen>
+	<dimen name = "gridCell">14sp</dimen>
+	<dimen name = "gridVerticalSpacing">40dp</dimen>
+	<dimen name = "gridHorizontalSpacing">5dp</dimen>
+	<dimen name = "gridColumnWidth">100dp</dimen>
+	<dimen name = "label">25sp</dimen>
+</resources>

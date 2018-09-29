@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:tools = "http://schemas.android.com/tools"
+	android:layout_height = "match_parent"
+	android:layout_width = "match_parent"
+	tools:context = ".ActivityRelativeLayout"
+	android:background = "@color/background"
+	>
+	<TextView
+		android:layout_centerVertical="true"
+		android:id = "@+id/title"
+		android:layout_height = "wrap_content"
+		android:layout_width = "wrap_content"
+		android:text = "@string/activity2Title"
+		android:textSize = "@dimen/title"
+		/>
+	<TextView
+		android:id = "@+id/relativeLayout"
+		android:layout_centerHorizontal="true"
+		android:layout_below = "@id/title"
+		android:layout_height = "wrap_content"
+		android:layout_width = "wrap_content"
+		android:text = "@string/relativeLayout"
+		android:textSize = "@dimen/subheading"
+		/>
+	<Switch
+		android:id="@+id/toggleSwitch"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/relativeLayout"
+		android:text="@string/switchButton"/>
+	<include
+		layout = "@layout/layout_editor"
+		android:layout_height = "100dp"
+		android:layout_width = "match_parent"
+		android:layout_below="@id/toggleSwitch"
+		android:gravity = "center"
+		/>
+</RelativeLayout>

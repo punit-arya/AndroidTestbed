@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent"
+	android:orientation = "vertical"
+	>
+	<EditText
+		android:ems = "10"
+		android:gravity = "top|start"
+		android:hint =  "@string/enter_whatever_here"
+		android:id = "@+id/layout_editor"
+		android:inputType = "textMultiLine|number"
+		android:layout_height = "match_parent"
+		android:layout_width = "match_parent"
+		android:typeface="monospace"
+		/>
+</LinearLayout>

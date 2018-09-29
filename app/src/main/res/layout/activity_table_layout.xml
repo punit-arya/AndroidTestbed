@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:tools = "http://schemas.android.com/tools"
+	android:layout_height = "match_parent"
+	android:layout_width = "match_parent"
+	tools:context = ".ActivityTableLayout"
+	>
+	<TableRow>
+		<TextView
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:text = "@string/activity3Title"
+			android:textSize = "@dimen/title"
+			/>
+		<TextView
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:text = "@string/tableLayout"
+			android:textSize = "@dimen/subheading"
+			/>
+	</TableRow>
+	<TableRow>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToMainActivity"
+			android:layout_gravity = "center"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTableLayoutTap"
+			android:text = "@string/goToMainActivity"
+			android:textColor = "@color/colorAccent"
+			/>
+		<ToggleButton
+			android:id="@+id/toggleButton"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>
+	</TableRow>
+</TableLayout>
