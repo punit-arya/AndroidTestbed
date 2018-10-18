@@ -4,6 +4,7 @@
 	xmlns:tools = "http://schemas.android.com/tools"
 	package = "net.thearya.androidtestbed"
 	>
+	<uses-permission android:name = "android.permission.INTERNET"/>
 	<application
 		android:allowBackup = "false"
 		android:icon = "@mipmap/icon_launcher"
@@ -19,16 +20,19 @@
 				<category android:name = "android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
-		<activity android:name = ".ActivityRelativeLayout"/>
-		<activity android:name = ".ActivityTableLayout"/>
-		<activity android:name = ".ActivityRadioGroup"/>
-		<activity android:name = ".ActivityScrollView"/>
-		<activity android:name = ".ActivityListView"/>
-		<activity android:name = ".ActivityListViewMultipleChoice"/>
-		<activity android:name = ".ActivitySpinner"/>
-		<activity android:name = ".ActivityGridView"/>
 		<activity android:name = ".ActivityAutoCompleteTextView"/>
+		<activity android:name = ".ActivityGridView"/>
 		<activity android:name = ".ActivityLinearLayout"/>
-		<activity android:name = ".ActivityListViewCustomized"></activity>
+		<activity android:name = ".ActivityListView"/>
+		<activity android:name = ".ActivityListViewCustomized"/>
+		<activity android:name = ".ActivityListViewMultipleChoice"/>
+		<activity android:name = ".ActivityRadioGroup"/>
+		<activity android:name = ".ActivityRelativeLayout"/>
+		<activity android:name = ".ActivityScrollView"/>
+		<activity android:name = ".ActivitySpinner"/>
+		<activity android:name = ".ActivityTableLayout"/>
+		<activity android:name = ".ActivityWebView1"/>
+		<activity android:name = ".ActivityWebView2"/>
+		<activity android:name = ".ActivityWebView3"/>
 	</application>
 </manifest>

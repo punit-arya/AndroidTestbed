@@ -24,7 +24,8 @@ public class ActivityRelativeLayout extends AppCompatActivity implements Compoun
 		if (isChecked)
 		{
 			buttonView.setText(R.string.switched_on);
-		} else
+		}
+		else
 		{
 			buttonView.setText(R.string.switched_off);
 		}

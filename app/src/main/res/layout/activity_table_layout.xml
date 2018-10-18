@@ -28,12 +28,13 @@
 			android:layout_height = "wrap_content"
 			android:layout_width = "wrap_content"
 			android:onClick = "onButtonTableLayoutTap"
-			android:text = "@string/goToMainActivity"
+			android:text = "@string/goToActivityMain"
 			android:textColor = "@color/colorAccent"
 			/>
 		<ToggleButton
-			android:id="@+id/toggleButton"
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"/>
+			android:id = "@+id/toggleButton"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			/>
 	</TableRow>
 </TableLayout>

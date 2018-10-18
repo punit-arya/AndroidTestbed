@@ -6,18 +6,16 @@
 	android:layout_width = "match_parent"
 	android:orientation = "vertical"
 	tools:context = ".ActivitySpinner"
-	tools:ignore = "ExtraText"
 	>
 	<TextView
 		android:id = "@+id/spinnerSelected"
+		android:hint = "@string/spinner_selection"
 		android:layout_height = "wrap_content"
 		android:layout_width = "match_parent"
-		android:hint="@string/spinner_selection"
 		/>
 	<Spinner
 		android:id = "@+id/spinner"
-		android:layout_width = "match_parent"
 		android:layout_height = "wrap_content"
+		android:layout_width = "match_parent"
 		/>
-</LinearLayout>
-<!-- TODO hint not working. -->
+</LinearLayout><!-- TODO hint not working. -->

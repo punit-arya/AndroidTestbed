@@ -16,7 +16,7 @@
 		android:textSize = "@dimen/title"
 		/>
 	<TextView
-		android:id = "@+id/relativeLayout"
+		android:id = "@+id/linearLayout"
 		android:layout_height = "wrap_content"
 		android:layout_width = "wrap_content"
 		android:text = "@string/linearLayout"
@@ -27,5 +27,30 @@
 		android:layout_height = "wrap_content"
 		android:layout_width = "wrap_content"
 		android:text = "@string/checkboxCaption"
+		/>
+	<TextView
+		android:id = "@+id/whatsYourName"
+		android:gravity = "center"
+		android:layout_height = "wrap_content"
+		android:layout_width = "match_parent"
+		android:text = "@string/whatsYourName"
+		android:textSize = "@dimen/subheading"
+		/>
+	<EditText
+		android:id = "@+id/name"
+		android:layout_height = "wrap_content"
+		android:layout_width = "wrap_content"
+		android:inputType = "text"
+		android:hint = "@string/enterYourNameHere"
+		/>
+	<Button
+		android:background = "@color/buttonBackground"
+		android:id = "@+id/submitName"
+		android:layout_gravity = "center"
+		android:layout_height = "wrap_content"
+		android:layout_width = "wrap_content"
+		android:onClick = "onButtonSubmitNameTap"
+		android:text = "@string/submitName"
+		android:textColor = "@color/colorAccent"
 		/>
 </LinearLayout>

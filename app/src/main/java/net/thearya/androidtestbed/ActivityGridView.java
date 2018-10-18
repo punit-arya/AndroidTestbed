@@ -20,7 +20,8 @@ public class ActivityGridView extends AppCompatActivity implements AdapterView.O
 		setContentView(R.layout.activity_grid_view);
 		selectedItem = findViewById(R.id.selectedItem);
 		GridView gridView = findViewById(R.id.gridView);
-		gridView.setAdapter(new ArrayAdapter<>(this, R.layout.cell, items));
+		ArrayAdapter arrayAdapter = new ArrayAdapter<>(this, R.layout.cell, items);
+		gridView.setAdapter(arrayAdapter);
 		gridView.setOnItemClickListener(this);
 	}
 

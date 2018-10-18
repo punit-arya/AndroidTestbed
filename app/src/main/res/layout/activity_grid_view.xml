@@ -2,23 +2,25 @@
 <LinearLayout
 	xmlns:android = "http://schemas.android.com/apk/res/android"
 	xmlns:tools = "http://schemas.android.com/tools"
-	android:layout_width = "match_parent"
 	android:layout_height = "match_parent"
-	tools:context = ".ActivityGridView"
+	android:layout_width = "match_parent"
 	android:orientation = "vertical"
+	tools:context = ".ActivityGridView"
 	>
-	<TextView android:id="@+id/selectedItem"
-			  android:layout_width = "match_parent"
-			  android:layout_height = "wrap_content"/>
+	<TextView
+		android:id = "@+id/selectedItem"
+		android:layout_height = "wrap_content"
+		android:layout_width = "match_parent"
+		/>
 	<GridView
+		android:columnWidth = "@dimen/gridColumnWidth"
+		android:gravity = "center"
+		android:horizontalSpacing = "@dimen/gridHorizontalSpacing"
 		android:id = "@+id/gridView"
 		android:layout_height = "match_parent"
 		android:layout_width = "match_parent"
-		android:verticalSpacing = "@dimen/gridVerticalSpacing"
-		android:horizontalSpacing = "@dimen/gridHorizontalSpacing"
 		android:numColumns = "auto_fit"
-		android:columnWidth = "@dimen/gridColumnWidth"
 		android:stretchMode = "columnWidth"
-		android:gravity = "center"
+		android:verticalSpacing = "@dimen/gridVerticalSpacing"
 		/>
 </LinearLayout>

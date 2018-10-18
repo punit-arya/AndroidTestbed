@@ -17,13 +17,30 @@ public class ActivityListViewCustomized extends ListActivity
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		//setContentView(R.layout.activity_list_view_customized);
-		setListAdapter(new IconicAdapter());
+		// setContentView(R.layout.activity_list_view_customized);
+		setListAdapter(new AdapterIcon());
 	}
 
-	class IconicAdapter extends ArrayAdapter<String>
+	private String getModel(int position)
 	{
-		IconicAdapter()
+		return (String) getListAdapter().getItem(position);
+	}
+
+	class ViewHolder
+	{
+		ImageView icon;
+		TextView size;
+
+		ViewHolder(View row)
+		{
+			this.icon = row.findViewById(R.id.icon);
+			this.size = row.findViewById(R.id.size);
+		}
+	}
+
+	class AdapterIcon extends ArrayAdapter<String>
+	{
+		AdapterIcon()
 		{
 			super(ActivityListViewCustomized.this, R.layout.activity_list_view_customized, R.id.label, items);
 		}
@@ -33,18 +50,38 @@ public class ActivityListViewCustomized extends ListActivity
 		public View getView(int position, View convertView, @NonNull ViewGroup parent)
 		{
 			View row = super.getView(position, convertView, parent);
-			ImageView icon = row.findViewById(R.id.icon);
+			// ImageView icon = row.findViewById(R.id.icon);
+			ViewHolder holder = (ViewHolder) row.getTag();
 
-			if (items[position].length() > 4)
+			// if (items[position].length() > 4)
+			// {
+			// 	icon.setImageResource(R.drawable.delete);
+			// }
+			// else
+			// {
+			// 	icon.setImageResource(R.drawable.ok);
+			// }
+			//
+			// TextView size = row.findViewById(R.id.size);
+
+			if (holder == null)
 			{
-				icon.setImageResource(R.drawable.delete);
+				holder = new ViewHolder(row);
+				row.setTag(holder);
+			}
+
+			if (getModel(position).length() > 4)
+			{
+				holder.icon.setImageResource(R.drawable.delete);
 			}
 			else
 			{
-				icon.setImageResource(R.drawable.ok);
+				holder.icon.setImageResource(R.drawable.ok);
 			}
-			TextView size = row.findViewById(R.id.size);
-			size.setText(String.format(getString(R.string.size), items[position].length()));
+
+			// size.setText(String.format(getString(R.string.sizeTemplate), items[position].length()));
+			holder.size.setText(String.format(getString(R.string.sizeTemplate), items[position].length()));
+
 			return row;
 		}
 	}

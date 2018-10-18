@@ -17,7 +17,8 @@ public class ActivityListView extends ListActivity
 	{
 		super.onCreate(savedInstanceState);
 		this.setContentView(R.layout.activity_list_view);
-		setListAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items));
+		ArrayAdapter arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
+		setListAdapter(arrayAdapter);
 		textView = findViewById(R.id.textView);
 	}
 

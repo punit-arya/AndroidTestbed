@@ -126,5 +126,45 @@
 			android:text = "@string/goToActivityAutoCompleteTextView"
 			android:textColor = "@color/colorAccent"
 			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityListViewCustomized"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapListViewCustomized"
+			android:text = "@string/goToActivityListViewCustomized"
+			android:textColor = "@color/colorAccent"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityWebView1"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapWebView1"
+			android:text = "@string/goToActivityWebView1"
+			android:textColor = "@color/colorAccent"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityWebView2"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapWebView2"
+			android:text = "@string/goToActivityWebView2"
+			android:textColor = "@color/colorAccent"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityWebView3"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapWebView3"
+			android:text = "@string/goToActivityWebView3"
+			android:textColor = "@color/colorAccent"
+			/>
 	</LinearLayout>
 </ScrollView>
