@@ -166,5 +166,55 @@
 			android:text = "@string/goToActivityWebView3"
 			android:textColor = "@color/colorAccent"
 			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityWebView4"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapWebView4"
+			android:text = "@string/goToActivityWebView4"
+			style = "@style/countDracula"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityConstraintLayout0"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapConstraintLayout0"
+			android:text = "@string/goToActivityConstraintLayout0"
+			style = "@style/countessMena"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityConstraintLayout1"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapConstraintLayout1"
+			android:text = "@string/goToActivityConstraintLayout1"
+			style = "@style/countessMena"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityConstraintLayout2"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapConstraintLayout2"
+			android:text = "@string/goToActivityConstraintLayout2"
+			style = "@style/countessMena"
+			/>
+		<Button
+			android:background = "@color/buttonBackground"
+			android:id = "@+id/goToActivityRecyclerView0"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapRecyclerView0"
+			android:text = "@string/goToActivityRecyclerView0"
+			style = "@style/countessMena"
+			/>
 	</LinearLayout>
 </ScrollView>

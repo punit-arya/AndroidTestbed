@@ -24,7 +24,7 @@ public class ActivityListViewMultipleChoice extends ListActivity
 
 	public void onListItemClick(ListView parent, View view, int position, long id)
 	{
-		// TODO Pretty print this.
+		// TODO: Pretty print all checked items as a sequence.
 		parent.setItemChecked(4, true);
 		//SparseBooleanArray sparseBooleanArray = parent.getCheckedItemPositions();
 		//textView.setText(sparseBooleanArray.toString());

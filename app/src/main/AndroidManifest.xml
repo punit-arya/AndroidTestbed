@@ -14,6 +14,14 @@
 		android:theme = "@style/AppTheme"
 		tools:ignore = "GoogleAppIndexingWarning"
 		>
+		<meta-data
+			android:name = "android.webkit.WebView.MetricsOptOut"
+			android:value = "true"
+			/>
+		<meta-data
+			android:name = "android.webkit.WebView.EnableSafeBrowsing"
+			android:value = "false"
+			/>
 		<activity android:name = ".ActivityMain">
 			<intent-filter>
 				<action android:name = "android.intent.action.MAIN"/>
@@ -22,8 +30,15 @@
 		</activity>
 		<activity android:name = ".ActivityAutoCompleteTextView"/>
 		<activity android:name = ".ActivityGridView"/>
-		<activity android:name = ".ActivityLinearLayout"/>
-		<activity android:name = ".ActivityListView"/>
+		<activity
+			android:name = ".ActivityLinearLayout"
+			android:theme = "@style/countDracula"
+			/>
+		<activity
+			android:name = ".ActivityListView"
+			android:theme = "@android:style/Theme.Material"
+			tools:targetApi = "lollipop"
+			/>
 		<activity android:name = ".ActivityListViewCustomized"/>
 		<activity android:name = ".ActivityListViewMultipleChoice"/>
 		<activity android:name = ".ActivityRadioGroup"/>
@@ -34,5 +49,10 @@
 		<activity android:name = ".ActivityWebView1"/>
 		<activity android:name = ".ActivityWebView2"/>
 		<activity android:name = ".ActivityWebView3"/>
+		<activity android:name = ".ActivityWebView4"/>
+		<activity android:name = ".ActivityConstraintLayout0"/>
+		<activity android:name = ".ActivityConstraintLayout1"/>
+		<activity android:name = ".ActivityConstraintLayout2"/>
+		<activity android:name = ".ActivityRecyclerView0"/>
 	</application>
 </manifest>

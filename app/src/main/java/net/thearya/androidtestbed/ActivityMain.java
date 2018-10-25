@@ -12,7 +12,7 @@ public class ActivityMain extends AppCompatActivity
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		// TODO Convert this to a table layout with no horizontal scrolling and no wrapping.
+		// TODO: Convert this to a table layout with no horizontal scrolling and no wrapping.
 		setContentView(R.layout.activity_main);
 	}
 
@@ -98,5 +98,35 @@ public class ActivityMain extends AppCompatActivity
 	{
 		Log.i("INFO Tag", "You tapped onButtonTapWebView3");
 		startActivity(new Intent(this, ActivityWebView3.class));
+	}
+
+	public void onButtonTapWebView4(View view)
+	{
+		Log.i("INFO Tag", "You tapped onButtonTapWebView4");
+		startActivity(new Intent(this, ActivityWebView4.class));
+	}
+
+	public void onButtonTapConstraintLayout0(View view)
+	{
+		Log.i("INFO Tag", "You tapped onButtonTapConstraintLayout0");
+		startActivity(new Intent(this, ActivityConstraintLayout0.class));
+	}
+
+	public void onButtonTapConstraintLayout1(View view)
+	{
+		Log.i("INFO Tag", "You tapped onButtonTapConstraintLayout1");
+		startActivity(new Intent(this, ActivityConstraintLayout1.class));
+	}
+
+	public void onButtonTapConstraintLayout2(View view)
+	{
+		Log.i("INFO Tag", "You tapped onButtonTapConstraintLayout2");
+		startActivity(new Intent(this, ActivityConstraintLayout2.class));
+	}
+
+	public void onButtonTapRecyclerView0(View view)
+	{
+		Log.i("INFO Tag", "You tapped onButtonTapRecyclerView0");
+		startActivity(new Intent(this, ActivityRecyclerView0.class));
 	}
 }

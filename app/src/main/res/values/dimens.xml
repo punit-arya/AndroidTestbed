@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<dimen name = "gridCell">14sp</dimen>
-	<dimen name = "gridColumnWidth">100dp</dimen>
-	<dimen name = "gridHorizontalSpacing">5dp</dimen>
-	<dimen name = "gridVerticalSpacing">40dp</dimen>
-	<dimen name = "item">40sp</dimen>
-	<dimen name = "itemSize">10sp</dimen>
-	<dimen name = "subheading">20sp</dimen>
-	<dimen name = "title">30sp</dimen>
+	<dimen name = "gridCell">16sp</dimen>
+	<dimen name = "gridColumnWidth">96dp</dimen>
+	<dimen name = "gridHorizontalSpacing">8dp</dimen>
+	<dimen name = "gridVerticalSpacing">32dp</dimen>
+	<dimen name = "item">32sp</dimen>
+	<dimen name = "itemSize">16sp</dimen>
+	<dimen name = "subheading">24sp</dimen>
+	<dimen name = "title">32sp</dimen>
+	<dimen name = "dp4">4dp</dimen>
 </resources>
