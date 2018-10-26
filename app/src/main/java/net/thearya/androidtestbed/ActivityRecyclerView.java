@@ -3,7 +3,7 @@ package net.thearya.androidtestbed;
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
 
-public class RecyclerViewActivity extends Activity
+abstract public class ActivityRecyclerView extends Activity
 {
 	private RecyclerView recyclerView = null;
 

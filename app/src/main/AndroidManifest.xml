@@ -4,6 +4,12 @@
 	xmlns:tools = "http://schemas.android.com/tools"
 	package = "net.thearya.androidtestbed"
 	>
+	<supports-screens
+		android:anyDensity = "true"
+		android:largeScreens = "true"
+		android:normalScreens = "true"
+		android:smallScreens = "true"
+		/>
 	<uses-permission android:name = "android.permission.INTERNET"/>
 	<application
 		android:allowBackup = "false"

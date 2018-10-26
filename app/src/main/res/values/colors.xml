@@ -5,4 +5,5 @@
 	<color name = "colorAccent">#005F00</color>
 	<color name = "background">#9F9F9F</color>
 	<color name = "buttonBackground">#1F1F1F</color>
+	<color name = "colorDivider">#7FFF0000</color>
 </resources>

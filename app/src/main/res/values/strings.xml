@@ -73,4 +73,10 @@
 	<string name = "thirtyPerCent">Thirty</string>
 	<string name = "twentyPerCent">Twenty</string>
 	<string name = "goToActivityRecyclerView0">Activity RecyclerView 0</string>
+	<string name = "youClicked">You clicked number: %d</string>
+	<string name = "add">Add</string>
+	<string name = "reset">Reset</string>
+	<string name = "about">About ...</string>
+	<string name = "aboutToast">(C) Punit Arya</string>
+	<string name = "home">Wanna go home ?</string>
 </resources>

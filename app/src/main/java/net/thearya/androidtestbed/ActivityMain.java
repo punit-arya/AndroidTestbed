@@ -4,7 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
+import java.util.Objects;
 
 public class ActivityMain extends AppCompatActivity
 {
@@ -14,6 +18,7 @@ public class ActivityMain extends AppCompatActivity
 		super.onCreate(savedInstanceState);
 		// TODO: Convert this to a table layout with no horizontal scrolling and no wrapping.
 		setContentView(R.layout.activity_main);
+		Objects.requireNonNull(getActionBar()).setHomeButtonEnabled(true);
 	}
 
 	public void onButtonTapLinearLayout(View view)
@@ -128,5 +133,49 @@ public class ActivityMain extends AppCompatActivity
 	{
 		Log.i("INFO Tag", "You tapped onButtonTapRecyclerView0");
 		startActivity(new Intent(this, ActivityRecyclerView0.class));
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
+		getMenuInflater().inflate(R.menu.menu_action_bar, menu);
+
+		return super.onCreateOptionsMenu(menu);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem menuItem)
+	{
+		switch (menuItem.getItemId())
+		{
+			case R.id.add:
+				addWord();
+				return true;
+
+			case R.id.reset:
+				initAdapter();
+				return true;
+
+			case R.id.about:
+				Toast.makeText(this, R.string.aboutToast, Toast.LENGTH_LONG).show();
+				return true;
+
+			case R.id.home:
+				Toast.makeText(this, R.string.home, Toast.LENGTH_LONG).show();
+				Log.i("INFO Tag", "You wanna go home ?");
+				startActivity(new Intent(this, ActivityMain.class));
+				return true;
+		}
+		return super.onOptionsItemSelected(menuItem);
+	}
+
+	private void initAdapter()
+	{
+		Toast.makeText(this, R.string.reset, Toast.LENGTH_LONG).show();
+	}
+
+	private void addWord()
+	{
+		Toast.makeText(this, R.string.add, Toast.LENGTH_LONG).show();
 	}
 }

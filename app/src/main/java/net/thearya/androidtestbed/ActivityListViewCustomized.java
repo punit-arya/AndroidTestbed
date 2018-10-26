@@ -59,7 +59,7 @@ public class ActivityListViewCustomized extends ListActivity
 			// }
 			// else
 			// {
-			// 	icon.setImageResource(R.drawable.ok);
+			// 	icon.setImageResource(R.drawable.shorter);
 			// }
 			//
 			// TextView size = row.findViewById(R.id.size);
@@ -72,11 +72,11 @@ public class ActivityListViewCustomized extends ListActivity
 
 			if (getModel(position).length() > 4)
 			{
-				holder.icon.setImageResource(R.drawable.delete);
+				holder.icon.setImageResource(R.drawable.longer);
 			}
 			else
 			{
-				holder.icon.setImageResource(R.drawable.ok);
+				holder.icon.setImageResource(R.drawable.shorter);
 			}
 
 			// size.setText(String.format(getString(R.string.sizeTemplate), items[position].length()));
