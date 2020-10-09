@@ -23,12 +23,12 @@
 	<TableRow>
 		<Button
 			android:background = "@color/buttonBackground"
-			android:id = "@+id/goToMainActivity"
+			android:id = "@+id/mainActivity"
 			android:layout_gravity = "center"
 			android:layout_height = "wrap_content"
 			android:layout_width = "wrap_content"
-			android:onClick = "onButtonTableLayoutTap"
-			android:text = "@string/goToActivityMain"
+			android:onClick = "onButtonTapTableLayout"
+			android:text = "@string/activityMain"
 			android:textColor = "@color/colorAccent"
 			/>
 		<ToggleButton

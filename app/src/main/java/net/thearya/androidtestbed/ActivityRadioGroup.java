@@ -12,7 +12,7 @@ public class ActivityRadioGroup extends AppCompatActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_radio_group);
-		RadioButton radioButton = findViewById(R.id.radio2);
+		RadioButton radioButton = findViewById(R.id.radio1);
 		radioButton.setChecked(true);
 	}
 }

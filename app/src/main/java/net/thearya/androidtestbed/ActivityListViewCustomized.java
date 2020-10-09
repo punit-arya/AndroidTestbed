@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class ActivityListViewCustomized extends ListActivity
 {
+	// HIG: Change this to API levels.
 	private static final String[] items = {"lorem", "ipsum", "dolor", "sit", "amet", "consectetuer", "adipiscing", "elit", "morbi", "vel", "ligula", "vitae", "arcu", "aliquet", "mollis", "etiam", "vel", "erat", "placerat", "ante", "porttitor", "sodales", "pellentesque", "augue", "purus"};
 
 	@Override
@@ -53,16 +54,16 @@ public class ActivityListViewCustomized extends ListActivity
 			// ImageView icon = row.findViewById(R.id.icon);
 			ViewHolder holder = (ViewHolder) row.getTag();
 
-			// if (items[position].length() > 4)
-			// {
-			// 	icon.setImageResource(R.drawable.delete);
-			// }
-			// else
-			// {
-			// 	icon.setImageResource(R.drawable.shorter);
-			// }
-			//
-			// TextView size = row.findViewById(R.id.size);
+			if (items[position].length() > 4)
+			{
+				icon.setImageResource(R.drawable.delete);
+			}
+			else
+			{
+				icon.setImageResource(R.drawable.shorter);
+			}
+
+			TextView size = row.findViewById(R.id.size);
 
 			if (holder == null)
 			{
@@ -70,7 +71,13 @@ public class ActivityListViewCustomized extends ListActivity
 				row.setTag(holder);
 			}
 
-			if (getModel(position).length() > 4)
+			// HashMap<Integer, String> apiNames = new HashMap<>();
+			// for (int i = 1; i < 31; ++i)
+			// {
+			// 	apiNames.put(i, toString(Build.VERSION_CODES.i));
+			// }
+
+			if ((getModel(position) % 2) == 0)
 			{
 				holder.icon.setImageResource(R.drawable.longer);
 			}

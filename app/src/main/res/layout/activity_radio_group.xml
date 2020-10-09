@@ -19,19 +19,19 @@
 		android:textSize = "@dimen/subheading"
 		/>
 	<RadioButton
-		android:id = "@+id/radio1"
+		android:id = "@+id/radio0"
 		android:layout_height = "wrap_content"
 		android:layout_width = "wrap_content"
 		android:text = "@string/radio0"
 		/>
 	<RadioButton
-		android:id = "@+id/radio2"
+		android:id = "@+id/radio1"
 		android:layout_height = "wrap_content"
 		android:layout_width = "wrap_content"
 		android:text = "@string/radio1"
 		/>
 	<RadioButton
-		android:id = "@+id/radio3"
+		android:id = "@+id/radio2"
 		android:layout_height = "wrap_content"
 		android:layout_width = "wrap_content"
 		android:text = "@string/radio2"

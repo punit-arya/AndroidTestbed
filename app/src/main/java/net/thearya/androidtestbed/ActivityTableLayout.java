@@ -21,7 +21,7 @@ public class ActivityTableLayout extends AppCompatActivity implements CompoundBu
 		toggleButton.setOnCheckedChangeListener(this);
 	}
 
-	public void onButtonTableLayoutTap(View v)
+	public void onButtonTapTableLayout(View v)
 	{
 		startActivity(new Intent(this, ActivityMain.class));
 	}

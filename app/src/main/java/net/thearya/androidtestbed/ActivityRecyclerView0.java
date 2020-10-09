@@ -122,7 +122,7 @@ public class ActivityRecyclerView0 extends ActivityRecyclerView
 			int right = recyclerView.getWidth() - recyclerView.getPaddingRight();
 			int childCount = recyclerView.getChildCount();
 
-			for (int i = 0; i < childCount - 1; i++)
+			for (int i = 0; i < childCount - 1; ++i)
 			{
 				View child = recyclerView.getChildAt(i);
 				RecyclerView.LayoutParams layoutParams = (RecyclerView.LayoutParams) child.getLayoutParams();

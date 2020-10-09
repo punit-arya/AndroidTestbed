@@ -8,7 +8,7 @@ abstract public class ActivityRecyclerView extends Activity
 	private RecyclerView recyclerView = null;
 
 	public void setAdapter(RecyclerView.Adapter adapter)
-	// TODO: Adapter is a templatized class but no type parameter passed.  Check.
+	// MED:  Adapter is a templatized class but no type parameter passed.  Check.
 	{
 		getRecyclerView().setAdapter(adapter);
 	}

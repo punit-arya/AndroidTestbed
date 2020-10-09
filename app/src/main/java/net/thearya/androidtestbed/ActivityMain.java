@@ -8,7 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
-import java.util.Objects;
 
 public class ActivityMain extends AppCompatActivity
 {
@@ -16,9 +15,11 @@ public class ActivityMain extends AppCompatActivity
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		// TODO: Convert this to a table layout with no horizontal scrolling and no wrapping.
+		// MED: Bring app icon back and make it home button.
+		// getActionBar().setDisplayShowHomeEnabled(true);
+		// initAdapter();
+		// getActionBar().setIcon(R.drawable.icon_action_new);
 		setContentView(R.layout.activity_main);
-		Objects.requireNonNull(getActionBar()).setHomeButtonEnabled(true);
 	}
 
 	public void onButtonTapLinearLayout(View view)
@@ -75,6 +76,8 @@ public class ActivityMain extends AppCompatActivity
 		startActivity(new Intent(this, ActivityGridView.class));
 	}
 
+	// MED: Make an ExpandableListView showing the Android Version.
+
 	public void onButtonTapAutoCompleteTextView(View view)
 	{
 		Log.i("INFO Tag", "You tapped onButtonTapAutoCompleteTextView");
@@ -85,6 +88,12 @@ public class ActivityMain extends AppCompatActivity
 	{
 		Log.i("INFO Tag", "You tapped onButtonTapListViewCustomized");
 		startActivity(new Intent(this, ActivityListViewCustomized.class));
+	}
+
+	public void onButtonTapWebView0(View view)
+	{
+		Log.i("INFO Tag", "You tapped onButtonTapWebView0");
+		startActivity(new Intent(this, ActivityWebView0.class));
 	}
 
 	public void onButtonTapWebView1(View view)
@@ -103,12 +112,6 @@ public class ActivityMain extends AppCompatActivity
 	{
 		Log.i("INFO Tag", "You tapped onButtonTapWebView3");
 		startActivity(new Intent(this, ActivityWebView3.class));
-	}
-
-	public void onButtonTapWebView4(View view)
-	{
-		Log.i("INFO Tag", "You tapped onButtonTapWebView4");
-		startActivity(new Intent(this, ActivityWebView4.class));
 	}
 
 	public void onButtonTapConstraintLayout0(View view)
@@ -135,10 +138,16 @@ public class ActivityMain extends AppCompatActivity
 		startActivity(new Intent(this, ActivityRecyclerView0.class));
 	}
 
+	public void onButtonTapActivityActionBar(View view)
+	{
+		Log.i("INFO Tag", "You tapped onButtonTapActivityActionBar");
+		startActivity(new Intent(this, ActivityActionBar.class));
+	}
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
 	{
-		getMenuInflater().inflate(R.menu.menu_action_bar, menu);
+		getMenuInflater().inflate(R.menu.menu_action_bar_0, menu);
 
 		return super.onCreateOptionsMenu(menu);
 	}
@@ -150,32 +159,46 @@ public class ActivityMain extends AppCompatActivity
 		{
 			case R.id.add:
 				addWord();
+
 				return true;
 
 			case R.id.reset:
 				initAdapter();
+
 				return true;
 
 			case R.id.about:
 				Toast.makeText(this, R.string.aboutToast, Toast.LENGTH_LONG).show();
+
 				return true;
 
 			case R.id.home:
 				Toast.makeText(this, R.string.home, Toast.LENGTH_LONG).show();
 				Log.i("INFO Tag", "You wanna go home ?");
 				startActivity(new Intent(this, ActivityMain.class));
+
 				return true;
 		}
+
 		return super.onOptionsItemSelected(menuItem);
 	}
 
 	private void initAdapter()
 	{
 		Toast.makeText(this, R.string.reset, Toast.LENGTH_LONG).show();
+		// ArrayList<String> words = new ArrayList<>(Arrays.asList(items).subList(0, 5));
+		// adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, words);
+		// setListAdapter(adapter);
 	}
 
 	private void addWord()
 	{
 		Toast.makeText(this, R.string.add, Toast.LENGTH_LONG).show();
+		// // if (getListAdapter().getCount() < items.length)
+		// if (adapter.getCount() < items.length)
+		// {
+		// 	adapter.add(items[adapter.getCount()]);
+		// }
 	}
+
 }

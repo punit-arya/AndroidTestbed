@@ -18,47 +18,54 @@
 		android:roundIcon = "@mipmap/icon_launcher_round"
 		android:supportsRtl = "true"
 		android:theme = "@style/AppTheme"
-		tools:ignore = "GoogleAppIndexingWarning"
+		tools:ignore = "ExtraText,GoogleAppIndexingWarning"
 		>
-		<meta-data
-			android:name = "android.webkit.WebView.MetricsOptOut"
-			android:value = "true"
-			/>
+		<!--		<meta-datatheme-->
+		<!--			android:name = "android.webkit.WebView.MetricsOptOut"-->
+		<!--			android:value = "true"-->
+		<!--			/>-->
 		<meta-data
 			android:name = "android.webkit.WebView.EnableSafeBrowsing"
 			android:value = "false"
 			/>
 		<activity android:name = ".ActivityMain">
 			<intent-filter>
-				<action android:name = "android.intent.action.MAIN"/>
-				<category android:name = "android.intent.category.LAUNCHER"/>
+				<action android:name = "android.intent.action.MAIN" />
+				<category android:name = "android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
-		<activity android:name = ".ActivityAutoCompleteTextView"/>
-		<activity android:name = ".ActivityGridView"/>
 		<activity
 			android:name = ".ActivityLinearLayout"
 			android:theme = "@style/countDracula"
 			/>
 		<activity
+			android:name = ".ActivityRelativeLayout"
+			android:theme = "@style/style0"
+			/>
+		<activity android:name = ".ActivityTableLayout" />
+		<activity android:name = ".ActivityRadioGroup" />
+		<activity android:name = ".ActivityScrollView" />
+		<!-- HIG: Theme.Material works with ListView activity only (didn't check the lower activities though).  Check why. -->
+		<activity
 			android:name = ".ActivityListView"
 			android:theme = "@android:style/Theme.Material"
-			tools:targetApi = "lollipop"
 			/>
-		<activity android:name = ".ActivityListViewCustomized"/>
-		<activity android:name = ".ActivityListViewMultipleChoice"/>
-		<activity android:name = ".ActivityRadioGroup"/>
-		<activity android:name = ".ActivityRelativeLayout"/>
-		<activity android:name = ".ActivityScrollView"/>
-		<activity android:name = ".ActivitySpinner"/>
-		<activity android:name = ".ActivityTableLayout"/>
-		<activity android:name = ".ActivityWebView1"/>
-		<activity android:name = ".ActivityWebView2"/>
-		<activity android:name = ".ActivityWebView3"/>
-		<activity android:name = ".ActivityWebView4"/>
-		<activity android:name = ".ActivityConstraintLayout0"/>
-		<activity android:name = ".ActivityConstraintLayout1"/>
-		<activity android:name = ".ActivityConstraintLayout2"/>
-		<activity android:name = ".ActivityRecyclerView0"/>
+		<activity android:name = ".ActivityListViewMultipleChoice" />
+		<activity android:name = ".ActivitySpinner" />
+		<activity android:name = ".ActivityGridView" />
+		<activity android:name = ".ActivityAutoCompleteTextView" />
+		<activity android:name = ".ActivityListViewCustomized" />
+		<activity android:name = ".ActivityWebView0" />
+		<activity android:name = ".ActivityWebView1" />
+		<activity android:name = ".ActivityWebView2" />
+		<activity android:name = ".ActivityWebView3" />
+		<activity android:name = ".ActivityConstraintLayout0" />
+		<activity android:name = ".ActivityConstraintLayout1" />
+		<activity android:name = ".ActivityConstraintLayout2" />
+		<activity android:name = ".ActivityRecyclerView0" />
+		<activity
+			android:name = ".ActivityActionBar"
+			android:theme = "@android:style/Theme.Material"
+			/>
 	</application>
 </manifest>

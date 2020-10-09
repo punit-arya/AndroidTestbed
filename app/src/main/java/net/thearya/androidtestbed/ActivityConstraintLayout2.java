@@ -10,6 +10,6 @@ public class ActivityConstraintLayout2 extends Activity
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_constraint_layout2);
+		setContentView(R.layout.activity_constraint_layout_2);
 	}
 }

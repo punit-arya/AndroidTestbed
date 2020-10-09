@@ -11,7 +11,6 @@ public class ActivityListViewMultipleChoice extends ListActivity
 {
 	private static final String[] items = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"};
 	private TextView textView;
-	private ListView listView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -24,7 +23,7 @@ public class ActivityListViewMultipleChoice extends ListActivity
 
 	public void onListItemClick(ListView parent, View view, int position, long id)
 	{
-		// TODO: Pretty print all checked items as a sequence.
+		// MED: Pretty print all checked items as a sequence.
 		parent.setItemChecked(4, true);
 		//SparseBooleanArray sparseBooleanArray = parent.getCheckedItemPositions();
 		//textView.setText(sparseBooleanArray.toString());
