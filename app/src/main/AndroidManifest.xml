@@ -10,7 +10,7 @@
 		android:normalScreens = "true"
 		android:smallScreens = "true"
 		/>
-	<uses-permission android:name = "android.permission.INTERNET"/>
+	<uses-permission android:name = "android.permission.INTERNET" />
 	<application
 		android:allowBackup = "false"
 		android:icon = "@mipmap/icon_launcher"
@@ -20,10 +20,12 @@
 		android:theme = "@style/AppTheme"
 		tools:ignore = "ExtraText,GoogleAppIndexingWarning"
 		>
-		<!--		<meta-datatheme-->
-		<!--			android:name = "android.webkit.WebView.MetricsOptOut"-->
-		<!--			android:value = "true"-->
-		<!--			/>-->
+		<activity android:name = ".LifecycleLogging"></activity>
+		<activity android:name = ".IntentExtras" />
+		<activity android:name = ".ActivityLaunchURI" /> <!-- <meta-datatheme -->
+		<!-- android:name = "android.webkit.WebView.MetricsOptOut" -->
+		<!-- android:value = "true" -->
+		<!-- /> -->
 		<meta-data
 			android:name = "android.webkit.WebView.EnableSafeBrowsing"
 			android:value = "false"
@@ -44,8 +46,7 @@
 			/>
 		<activity android:name = ".ActivityTableLayout" />
 		<activity android:name = ".ActivityRadioGroup" />
-		<activity android:name = ".ActivityScrollView" />
-		<!-- HIG: Theme.Material works with ListView activity only (didn't check the lower activities though).  Check why. -->
+		<activity android:name = ".ActivityScrollView" /> <!-- HIG: Theme.Material works with ListView activity only (didn't check the lower activities though).  Check why. -->
 		<activity
 			android:name = ".ActivityListView"
 			android:theme = "@android:style/Theme.Material"

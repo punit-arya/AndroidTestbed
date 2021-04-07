@@ -1,14 +1,13 @@
 package net.thearya.androidtestbed;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class ActivityLinearLayout extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener
+public class ActivityLinearLayout extends ActivityMain implements CompoundButton.OnCheckedChangeListener
 {
 	CheckBox checkBox;
 

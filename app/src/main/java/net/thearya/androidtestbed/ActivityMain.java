@@ -14,6 +14,7 @@ public class ActivityMain extends AppCompatActivity
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
+		Log.d(getClass().getSimpleName(), "onCreate()");
 		super.onCreate(savedInstanceState);
 		// MED: Bring app icon back and make it home button.
 		// getActionBar().setDisplayShowHomeEnabled(true);
@@ -24,55 +25,55 @@ public class ActivityMain extends AppCompatActivity
 
 	public void onButtonTapLinearLayout(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapLinearLayout");
+		Log.i("INFO Tag", "You tapped onButtonTapLinearLayout..");
 		startActivity(new Intent(this, ActivityLinearLayout.class));
 	}
 
 	public void onButtonTapRelativeLayout(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapRelativeLayout");
+		Log.i("INFO Tag", "You tapped onButtonTapRelativeLayout.");
 		startActivity(new Intent(this, ActivityRelativeLayout.class));
 	}
 
 	public void onButtonTapTableLayout(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapTableLayout");
+		Log.i("INFO Tag", "You tapped onButtonTapTableLayout.");
 		startActivity(new Intent(this, ActivityTableLayout.class));
 	}
 
 	public void onButtonTapRadioGroup(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapRadioGroup");
+		Log.i("INFO Tag", "You tapped onButtonTapRadioGroup.");
 		startActivity(new Intent(this, ActivityRadioGroup.class));
 	}
 
 	public void onButtonTapScrollView(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapScrollView");
+		Log.i("INFO Tag", "You tapped onButtonTapScrollView.");
 		startActivity(new Intent(this, ActivityScrollView.class));
 	}
 
 	public void onButtonTapListView(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapListView");
+		Log.i("INFO Tag", "You tapped onButtonTapListView.");
 		startActivity(new Intent(this, ActivityListView.class));
 	}
 
 	public void onButtonTapListViewMultipleChoice(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapListViewMultipleChoice");
+		Log.i("INFO Tag", "You tapped onButtonTapListViewMultipleChoice.");
 		startActivity(new Intent(this, ActivityListViewMultipleChoice.class));
 	}
 
 	public void onButtonTapSpinner(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapSpinner");
+		Log.i("INFO Tag", "You tapped onButtonTapSpinner.");
 		startActivity(new Intent(this, ActivitySpinner.class));
 	}
 
 	public void onButtonTapGridView(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapGridView");
+		Log.i("INFO Tag", "You tapped onButtonTapGridView.");
 		startActivity(new Intent(this, ActivityGridView.class));
 	}
 
@@ -80,67 +81,67 @@ public class ActivityMain extends AppCompatActivity
 
 	public void onButtonTapAutoCompleteTextView(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapAutoCompleteTextView");
+		Log.i("INFO Tag", "You tapped onButtonTapAutoCompleteTextView.");
 		startActivity(new Intent(this, ActivityAutoCompleteTextView.class));
 	}
 
 	public void onButtonTapListViewCustomized(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapListViewCustomized");
+		Log.i("INFO Tag", "You tapped onButtonTapListViewCustomized.");
 		startActivity(new Intent(this, ActivityListViewCustomized.class));
 	}
 
 	public void onButtonTapWebView0(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapWebView0");
+		Log.i("INFO Tag", "You tapped onButtonTapWebView0.");
 		startActivity(new Intent(this, ActivityWebView0.class));
 	}
 
 	public void onButtonTapWebView1(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapWebView1");
+		Log.i("INFO Tag", "You tapped onButtonTapWebView1.");
 		startActivity(new Intent(this, ActivityWebView1.class));
 	}
 
 	public void onButtonTapWebView2(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapWebView2");
+		Log.i("INFO Tag", "You tapped onButtonTapWebView2.");
 		startActivity(new Intent(this, ActivityWebView2.class));
 	}
 
 	public void onButtonTapWebView3(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapWebView3");
+		Log.i("INFO Tag", "You tapped onButtonTapWebView3.");
 		startActivity(new Intent(this, ActivityWebView3.class));
 	}
 
 	public void onButtonTapConstraintLayout0(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapConstraintLayout0");
+		Log.i("INFO Tag", "You tapped onButtonTapConstraintLayout0.");
 		startActivity(new Intent(this, ActivityConstraintLayout0.class));
 	}
 
 	public void onButtonTapConstraintLayout1(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapConstraintLayout1");
+		Log.i("INFO Tag", "You tapped onButtonTapConstraintLayout1.");
 		startActivity(new Intent(this, ActivityConstraintLayout1.class));
 	}
 
 	public void onButtonTapConstraintLayout2(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapConstraintLayout2");
+		Log.i("INFO Tag", "You tapped onButtonTapConstraintLayout2.");
 		startActivity(new Intent(this, ActivityConstraintLayout2.class));
 	}
 
 	public void onButtonTapRecyclerView0(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapRecyclerView0");
+		Log.i("INFO Tag", "You tapped onButtonTapRecyclerView0.");
 		startActivity(new Intent(this, ActivityRecyclerView0.class));
 	}
 
 	public void onButtonTapActivityActionBar(View view)
 	{
-		Log.i("INFO Tag", "You tapped onButtonTapActivityActionBar");
+		Log.i("INFO Tag", "You tapped onButtonTapActivityActionBar.");
 		startActivity(new Intent(this, ActivityActionBar.class));
 	}
 
@@ -201,4 +202,66 @@ public class ActivityMain extends AppCompatActivity
 		// }
 	}
 
+	public void onButtonTapActivityLaunchURI(View view)
+	{
+		Log.i("INFO Tag", "You tapped onButtonTapActivityActionBar.");
+		startActivity(new Intent(this, ActivityLaunchURI.class));
+	}
+
+	public void onButtonTapActivityIntentExtras(View view)
+	{
+		Log.i("INFO Tag", "You tapped onButtonTapActivityIntentExtras.");
+		Intent otherActivity = new Intent(this, IntentExtras.class);
+		otherActivity.putExtra(IntentExtras.EXTRA_MESSAGE, getString(R.string.fromAnotherActivity)); // MED: What is the use of EXTRA_MESSAGE ?
+		startActivity(otherActivity);
+	}
+
+	@Override
+	public void onRestart()
+	{
+		Log.d(getClass().getSimpleName(), "onRestart()");
+		super.onRestart();
+	}
+
+	@Override
+	public void onStart()
+	{
+		Log.d(getClass().getSimpleName(), "onStart()");
+		super.onStart();
+
+	}
+
+	@Override
+	public void onResume()
+	{
+		Log.d(getClass().getSimpleName(), "onResume()");
+		super.onResume();
+	}
+
+	@Override
+	public void onPause()
+	{
+		Log.d(getClass().getSimpleName(), "onPause()");
+		super.onPause();
+	}
+
+	@Override
+	public void onStop()
+	{
+		Log.d(getClass().getSimpleName(), "onStop()");
+		super.onStop();
+	}
+
+	@Override
+	public void onDestroy()
+	{
+		Log.d(getClass().getSimpleName(), "onDestroy()");
+		super.onDestroy();
+	}
+
+	public void onButtonTapLifecycleLogging(View view)
+	{
+		Log.i("INFO Tag", "You tapped onButtonTapLifecycleLogging.");
+		startActivity(new Intent(this, LifecycleLogging.class));
+	}
 }

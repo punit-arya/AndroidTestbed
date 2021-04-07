@@ -82,4 +82,19 @@
 		tools:ignore = "Typos">Wanna go home ?</string>
 	<string name = "activityActionBar">Activity ActionBar</string>
 	<string name = "actionButton0">ActionButton0</string>
+	<!--	<string name = "title_activity_u_r_i_launch">URILaunch</string>-->
+	<!--	&lt;!&ndash; Strings used for fragments for navigation &ndash;&gt;-->
+	<!--	<string name = "first_fragment_label">First Fragment</string>-->
+	<!--	<string name = "second_fragment_label">Second Fragment</string>-->
+	<!--	<string name = "next">Next</string>-->
+	<!--	<string name = "previous">Previous</string>-->
+	<!--	<string name = "hello_first_fragment">Hello first fragment</string>-->
+	<!--	<string name = "hello_second_fragment">Hello second fragment. Arg: %1$s</string>-->
+	<string name = "show_me">Show Me</string>
+	<string name = "activityLaunchURI">Activity Launch URI</string>
+	<string name = "activityIntentExtras">Intent Extras</string>
+	<string name = "fromAnotherActivity">From Main Activity With Love!</string>
+	<string name = "lifecycleLoggingTitle">Lifestyle Logging</string>
+	<string name = "lifecycleLoggingContent">Content</string>
+	<string name = "lifecycleLogging">Activity Lifestyle Logging</string>
 </resources>

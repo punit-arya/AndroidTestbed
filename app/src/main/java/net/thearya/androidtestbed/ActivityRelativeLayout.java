@@ -1,11 +1,10 @@
 package net.thearya.androidtestbed;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
-public class ActivityRelativeLayout extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener
+public class ActivityRelativeLayout extends ActivityMain implements CompoundButton.OnCheckedChangeListener
 {
 	Switch aSwitch;
 

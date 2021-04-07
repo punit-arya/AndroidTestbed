@@ -9,4 +9,5 @@
 	<dimen name = "subheading">24sp</dimen>
 	<dimen name = "title">32sp</dimen>
 	<dimen name = "dp4">4dp</dimen>
+	<dimen name = "fab_margin">16dp</dimen>
 </resources>

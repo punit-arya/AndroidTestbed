@@ -226,5 +226,35 @@
 			android:text = "@string/activityActionBar"
 			android:textColor = "@color/colorAccent"
 			/>
+		<Button
+			android:id = "@+id/activityLaunchURI"
+			android:background = "@color/buttonBackground"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapActivityLaunchURI"
+			android:text = "@string/activityLaunchURI"
+			android:textColor = "@color/colorAccent"
+			/>
+		<Button
+			android:id = "@+id/activityIntentExtras"
+			android:background = "@color/buttonBackground"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapActivityIntentExtras"
+			android:text = "@string/activityIntentExtras"
+			android:textColor = "@color/colorAccent"
+			/>
+		<Button
+			android:id = "@+id/lifestyleLogging"
+			android:background = "@color/buttonBackground"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapLifecycleLogging"
+			android:text = "@string/lifecycleLogging"
+			android:textColor = "@color/colorAccent"
+			/>
 	</LinearLayout>
 </ScrollView><!-- HIG: Convert this to ConstraintLayout -->
