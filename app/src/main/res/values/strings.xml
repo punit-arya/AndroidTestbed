@@ -97,4 +97,7 @@
 	<string name = "lifecycleLoggingTitle">Lifestyle Logging</string>
 	<string name = "lifecycleLoggingContent">Content</string>
 	<string name = "lifecycleLogging">Activity Lifestyle Logging</string>
+	<string name = "fragment_2">Fragment 2!</string>
+	<string name = "fragment1_1">Fragment 1.1</string>
+	<string name = "fragment1">Fragment 1</string>
 </resources>

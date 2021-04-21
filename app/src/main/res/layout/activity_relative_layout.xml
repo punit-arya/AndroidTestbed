@@ -36,6 +36,6 @@
 		android:layout_below = "@id/toggleSwitch"
 		android:layout_height = "100dp"
 		android:layout_width = "match_parent"
-		layout = "@layout/layout_editor"
+		layout = "@layout/activity_layout_editor"
 		/>
 </RelativeLayout>

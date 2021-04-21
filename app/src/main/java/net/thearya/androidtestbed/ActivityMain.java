@@ -211,8 +211,8 @@ public class ActivityMain extends AppCompatActivity
 	public void onButtonTapActivityIntentExtras(View view)
 	{
 		Log.i("INFO Tag", "You tapped onButtonTapActivityIntentExtras.");
-		Intent otherActivity = new Intent(this, IntentExtras.class);
-		otherActivity.putExtra(IntentExtras.EXTRA_MESSAGE, getString(R.string.fromAnotherActivity)); // MED: What is the use of EXTRA_MESSAGE ?
+		Intent otherActivity = new Intent(this, ActivityIntentExtras.class);
+		otherActivity.putExtra(ActivityIntentExtras.EXTRA_MESSAGE, getString(R.string.fromAnotherActivity)); // MED: What is the use of EXTRA_MESSAGE ?
 		startActivity(otherActivity);
 	}
 
@@ -262,6 +262,12 @@ public class ActivityMain extends AppCompatActivity
 	public void onButtonTapLifecycleLogging(View view)
 	{
 		Log.i("INFO Tag", "You tapped onButtonTapLifecycleLogging.");
-		startActivity(new Intent(this, LifecycleLogging.class));
+		startActivity(new Intent(this, ActivityLifecycleLogging.class));
+	}
+
+	public void onButtonTapStaticFragments(View view)
+	{
+		Log.i("INFO Tag", "You tapped onButtonTapStaticFragments.");
+		startActivity(new Intent(this, Fragment1.class));
 	}
 }

@@ -256,5 +256,15 @@
 			android:text = "@string/lifecycleLogging"
 			android:textColor = "@color/colorAccent"
 			/>
+		<Button
+			android:id = "@+id/staticFragments"
+			android:background = "@color/buttonBackground"
+			android:layout_gravity = "bottom"
+			android:layout_height = "wrap_content"
+			android:layout_width = "wrap_content"
+			android:onClick = "onButtonTapStaticFragments"
+			android:text = "@string/fragment1"
+			android:textColor = "@color/colorAccent"
+			/>
 	</LinearLayout>
 </ScrollView><!-- HIG: Convert this to ConstraintLayout -->

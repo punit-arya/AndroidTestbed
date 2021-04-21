@@ -20,8 +20,10 @@
 		android:theme = "@style/AppTheme"
 		tools:ignore = "ExtraText,GoogleAppIndexingWarning"
 		>
-		<activity android:name = ".LifecycleLogging"></activity>
-		<activity android:name = ".IntentExtras" />
+		<activity android:name = ".Fragment1_1"></activity>
+		<activity android:name = ".StaticFragment" />
+		<activity android:name = ".ActivityLifecycleLogging" />
+		<activity android:name = ".ActivityIntentExtras" />
 		<activity android:name = ".ActivityLaunchURI" /> <!-- <meta-datatheme -->
 		<!-- android:name = "android.webkit.WebView.MetricsOptOut" -->
 		<!-- android:value = "true" -->
@@ -68,5 +70,7 @@
 			android:name = ".ActivityActionBar"
 			android:theme = "@android:style/Theme.Material"
 			/>
+		<activity android:name = ".Fragment1" />
+		<activity android:name = ".Fragment2" />
 	</application>
 </manifest>

@@ -2,7 +2,7 @@ package net.thearya.androidtestbed;
 
 import android.os.Bundle;
 
-public class LifecycleLogging extends ActivityMain
+public class ActivityLifecycleLogging extends ActivityMain
 {
 	@Override
 	protected void onCreate(Bundle savedInstanceState)

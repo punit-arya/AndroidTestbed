@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-public class IntentExtras extends AppCompatActivity
+public class ActivityIntentExtras extends AppCompatActivity
 {
 	public static final String EXTRA_MESSAGE = "Message";
 
