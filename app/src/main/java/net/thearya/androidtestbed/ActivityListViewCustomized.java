@@ -16,7 +16,7 @@ public class ActivityListViewCustomized extends ListActivity
 {
 	// HIG: Change this to API levels.
 	private static final String[] items = {"lorem", "ipsum", "dolor", "sit", "amet", "consectetuer", "adipiscing", "elit", "morbi", "vel", "ligula", "vitae", "arcu", "aliquet", "mollis", "etiam", "vel", "erat", "placerat", "ante", "porttitor", "sodales", "pellentesque", "augue", "purus"};
-	private static String[] versionNames = new String[30];
+	private static final String[] versionNames = new String[30];
 
 	private static void initializeVersionNames()
 	{
