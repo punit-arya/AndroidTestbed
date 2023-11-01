@@ -11,8 +11,7 @@ public class ActivityLinearLayout extends ActivityMain implements CompoundButton
 {
 	CheckBox checkBox;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState)
+	@Override protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_linear_layout);
@@ -20,8 +19,7 @@ public class ActivityLinearLayout extends ActivityMain implements CompoundButton
 		checkBox.setOnCheckedChangeListener(this);
 	}
 
-	@Override
-	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
+	@Override public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
 	{
 		if (isChecked)
 		{
@@ -37,8 +35,8 @@ public class ActivityLinearLayout extends ActivityMain implements CompoundButton
 	{
 		EditText editText = findViewById(R.id.name);
 		String name = editText.getText().toString();
-		//String toastContent = getString(R.string.toastContent, name);
-		//Toast.makeText(this, toastContent, Toast.LENGTH_SHORT).show();
+		//		String toastContent = getString(R.string.toastContent, name);
+		//		Toast.makeText(this, toastContent, Toast.LENGTH_SHORT).show();
 		Toast.makeText(this, "Hello, " + name, Toast.LENGTH_SHORT).show();
 	}
 }

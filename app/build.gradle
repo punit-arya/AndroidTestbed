@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-	compileSdkVersion 28
+	compileSdk 33
 	defaultConfig {
 		applicationId "net.thearya.androidtestbed"
 		minSdkVersion 21
-		targetSdkVersion 27
+		targetSdk 33
 		versionCode 1
 		versionName "1.0"
 		testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-		vectorDrawables.generatedDensities = ['hdpi','xxhdpi']
+		vectorDrawables.generatedDensities = ['hdpi', 'xxhdpi']
 	}
 	buildTypes {
 		release {
@@ -17,7 +17,8 @@ android {
 			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 		}
 	}
-	buildToolsVersion '29.0.2'
+	namespace 'net.thearya.androidtestbed'
+	buildToolsVersion '33.0.1'
 }
 
 repositories {
@@ -33,15 +34,15 @@ dependencies {
 	implementation 'com.android.support:design:28.0.0'
 	implementation 'android.arch.navigation:navigation-fragment:1.0.0'
 	implementation 'android.arch.navigation:navigation-ui:1.0.0'
-	implementation 'com.android.support:support-v4:27.1.1'
-	testImplementation 'junit:junit:4.12'
+	implementation 'com.android.support:support-v4:28.0.0'
+	testImplementation 'junit:junit:4.13.2'
 	//	androidTestImplementation 'com.android.support.test:runner:1.0.2'
 	//	androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 	androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2', { exclude group: 'com.android.support', module: 'support-annotations' }
 	implementation 'org.greenrobot:eventbus:3.0.0'
-	implementation 'com.google.code.gson:gson:2.8.5'
-	implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
-	implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+	implementation 'com.google.code.gson:gson:2.8.6'
+	implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+	implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
 	implementation 'com.commonsware.cwac:security:0.8.0'
 	implementation 'com.android.support:support-v13:28.0.0'
 	implementation 'io.karim:materialtabs:2.0.5'

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment
-	xmlns:android = "http://schemas.android.com/apk/res/android"
-	android:id = "@+id/dummy"
-	android:name = "net.thearya.androidtestbed.Fragment1_1"
-	android:layout_width = "match_parent"
-	android:layout_height = "match_parent"
-	/>	<!--<?xml version="1.0" encoding="utf-8"?>-->
-	<!--<android.support.constraint.ConstraintLayout-->
-	<!--	xmlns:android = "http://schemas.android.com/apk/res/android"-->
-	<!--	xmlns:app = "http://schemas.android.com/apk/res-auto"-->
-	<!--	xmlns:tools = "http://schemas.android.com/tools"-->
-	<!--	android:layout_width = "match_parent"-->
-	<!--	android:layout_height = "match_parent"-->
-	<!--	tools:context = ".Fragment1"-->
-	<!--	></android.support.constraint.ConstraintLayout>-->
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dummy"
+    android:name="net.thearya.androidtestbed.Fragment1_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--	xmlns:android = "http://schemas.android.com/apk/res/android"-->
+    <!--	xmlns:app = "http://schemas.android.com/apk/res-auto"-->
+    <!--	xmlns:tools = "http://schemas.android.com/tools"-->
+    <!--	android:layout_width = "match_parent"-->
+    <!--	android:layout_height = "match_parent"-->
+    <!--	tools:context = ".Fragment1"-->
+    <!--	></android.support.constraint.ConstraintLayout>-->
